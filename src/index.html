@@ -9,7 +9,7 @@
   <body class="font-content text-slate-900">
     <header id="home" class="h-screen">
       <!-- navbar -->
-      <nav class="border-b-2 border-red-600">
+      <nav class="border-b-2 shadow-sm">
         <div
           class="container flex items-center justify-between px-2 py-4 mx-auto md:py-6"
         >
@@ -36,35 +36,89 @@
             </summary>
             <!-- hamburger content -->
             <div
-              class="absolute right-0 z-10 w-48 py-2 mx-auto mt-5 bg-white rounded-md shadow-lg"
+              class="absolute right-0 z-10 w-40 p-2 mt-5 text-sm bg-white rounded-md shadow-lg mx-aut"
             >
               <a
                 href="#home"
-                class="block px-4 py-1 bg-orange-400 text-slate-100"
+                class="block px-4 py-2 rounded-md hover:bg-orange-400 hover:text-slate-100"
                 >Home</a
               >
-              <a href="#aboutme" class="block px-4 py-1 hover:bg-slate-200"
+              <a
+                href="#aboutme"
+                class="block px-4 py-2 rounded-md hover:bg-orange-400 hover:text-slate-100"
                 >About Me</a
               >
-              <a href="#project" class="block px-4 py-1 hover:bg-slate-200"
+              <a
+                href="#project"
+                class="block px-4 py-2 rounded-md hover:bg-orange-400 hover:text-slate-100"
                 >Project</a
               >
-              <a href="#contact" class="block px-4 py-1 hover:bg-slate-200"
+              <a
+                href="#contact"
+                class="block px-4 py-2 rounded-md hover:bg-orange-400 hover:text-slate-100"
                 >Contact Me</a
               >
             </div>
           </details>
           <!-- menu hidden -->
           <div class="hidden md:gap-6 md:flex md:text-xl lg:gap-10">
-            <a href="#home" class="text-orange-400 underline underline-offset-8"
+            <a
+              href="#home"
+              class="hover:text-orange-400 hover:underline hover:underline-offset-8"
               >Home</a
             >
-            <a href="#aboutme" class="hover:text-orange-400">About Me</a>
-            <a href="#project" class="hover:text-orange-400">Project</a>
-            <a href="#contact" class="hover:text-orange-400">Contact Me</a>
+            <a
+              href="#aboutme"
+              class="hover:text-orange-400 hover:underline hover:underline-offset-8"
+              >About Me</a
+            >
+            <a
+              href="#project"
+              class="hover:text-orange-400 hover:underline hover:underline-offset-8"
+              >Project</a
+            >
+            <a
+              href="#contact"
+              class="hover:text-orange-400 hover:underline hover:underline-offset-8"
+              >Contact Me</a
+            >
           </div>
         </div>
       </nav>
+      <!-- hero section -->
+      <section
+        class="border-2 h-[calc(100vh-60px)] md:h-[calc(50vh-60px)] border-red-400 bg-gradient-to-t from-orange-300 to-pink-300"
+      >
+        <div class="container relative h-full p-2">
+          <h1
+            class="absolute left-0 right-0 mx-auto mb-4 text-6xl font-extrabold text-center md:top-20 md:mx-0 md:right-auto md:text-6xl top-10 font-heading"
+          >
+            Front End
+            <span class="text-orange-600 md:block md:pl-32 md:mt-3"
+              >Developer</span
+            >
+          </h1>
+
+          <div
+            class="z-10 hidden p-4 bg-white rounded-lg shadow-sm bottom-4 right-1/4 w-96 md:block md:absolute"
+          >
+            <p>
+              Hi, I'm a passionate front-end developer. If you're looking for
+              someone to bring your web projects to life, feel free to click the
+              button below to get in touch!
+            </p>
+            <button class="px-4 py-2 mt-4 text-white bg-orange-500 rounded-md">
+              Contact Me
+            </button>
+          </div>
+
+          <img
+            class="absolute bottom-0 left-0 right-0 mx-auto w-80 md:mx-0 md:left-auto"
+            src="../img/hendrik2.webp"
+            alt=""
+          />
+        </div>
+      </section>
     </header>
   </body>
 </html>
