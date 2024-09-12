@@ -7,9 +7,9 @@
     <title>Hendrik's Portfolio Website</title>
   </head>
   <body class="font-content text-slate-900">
-    <header id="home" class="h-screen">
+    <header id="home" class="h-screen md:h-1/2 lg:h-screen">
       <!-- navbar -->
-      <nav class="border-b-2 shadow-sm">
+      <nav class="shadow-sm">
         <div
           class="container flex items-center justify-between px-2 py-4 mx-auto md:py-6"
         >
@@ -87,38 +87,114 @@
       </nav>
       <!-- hero section -->
       <section
-        class="border-2 h-[calc(100vh-60px)] md:h-[calc(50vh-60px)] border-red-400 bg-gradient-to-t from-orange-300 to-pink-300"
+        class="h-[calc(100vh-60px)] lg:h-[calc(100vh-84px)] md:h-[calc(50vh-84px)] bg-gradient-to-t from-orange-300 to-purple-100"
       >
         <div class="container relative h-full p-2">
           <h1
-            class="absolute left-0 right-0 mx-auto mb-4 text-6xl font-extrabold text-center md:top-20 md:mx-0 md:right-auto md:text-6xl top-10 font-heading"
+            class="absolute left-0 right-0 mx-auto mb-4 text-6xl font-extrabold text-center md:top-20 md:mx-0 md:right-auto md:text-6xl top-[5%] font-heading"
           >
             Front End
-            <span class="text-orange-600 md:block md:pl-32 md:mt-3"
+            <span class="text-orange-500 md:block md:pl-32 md:mt-3"
               >Developer</span
             >
           </h1>
 
           <div
-            class="z-10 hidden p-4 bg-white rounded-lg shadow-sm bottom-4 right-1/4 w-96 md:block md:absolute"
+            class="z-10 hidden p-4 bg-white rounded-lg shadow-sm md:bottom-[10%] lg:right-[15%] right-1/4 w-96 md:block md:absolute"
           >
             <p>
-              Hi, I'm a passionate front-end developer. If you're looking for
-              someone to bring your web projects to life, feel free to click the
-              button below to get in touch!
+              If you're looking for someone to bring your web projects to life,
+              feel free to click the button below to get in touch!
             </p>
             <button class="px-4 py-2 mt-4 text-white bg-orange-500 rounded-md">
               Contact Me
             </button>
           </div>
-
+          <!-- hero img -->
           <img
-            class="absolute bottom-0 left-0 right-0 mx-auto w-80 md:mx-0 md:left-auto"
+            class="absolute bottom-0 left-0 right-0 mx-auto w-80 md:mx-0 md:left-auto lg:left-0 lg:mx-auto"
             src="../img/hendrik2.webp"
             alt=""
           />
         </div>
       </section>
     </header>
+    <!-- aboutme section -->
+    <section>
+      <!-- text aboutme section -->
+      <div
+        class="container flex flex-col items-center px-2 py-20 mx-auto lg:py-32 lg:justify-evenly gap-7 lg:flex-row-reverse"
+      >
+        <!-- heading aboutme -->
+        <div class="flex flex-col gap-3 lg:w-3/5 lg:gap-7">
+          <!-- text -->
+          <div class="flex flex-col items-center gap-2 lg:gap-5">
+            <h1 class="text-2xl font-semibold text-orange-500 md:text-4xl">
+              About Me
+            </h1>
+            <p class="text-sm text-center md:w-4/5 md:text-xl">
+              Hi, I’m Hendrik Prakoso, a passionate front-end developer with a
+              strong background in creating responsive and user-friendly
+              websites.
+            </p>
+          </div>
+          <!-- skill -->
+          <div class="flex flex-col md:w-11/12 md:mx-auto">
+            <div class="flex flex-col gap-2 md:text-xl lg:gap-5">
+              <div class="flex items-center justify-between gap-10">
+                <span>HTML</span>
+                <div
+                  class="relative w-full h-1 overflow-hidden rounded-full md:w-4/5 bg-slate-300"
+                >
+                  <div
+                    class="absolute w-4/5 h-1 bg-gradient-to-r from-orange-500 to-purple-500"
+                  ></div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between gap-14">
+                <span>CSS</span>
+                <div
+                  class="relative w-full h-1 overflow-hidden rounded-full md:w-4/5 bg-slate-300"
+                >
+                  <div
+                    class="absolute w-3/5 h-1 bg-gradient-to-r from-orange-500 to-purple-500"
+                  ></div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between gap-3">
+                <span>Javascript</span>
+                <div
+                  class="relative w-full h-1 overflow-hidden rounded-full md:w-4/5 bg-slate-300"
+                >
+                  <div
+                    class="absolute w-1/2 h-1 bg-gradient-to-r from-orange-500 to-purple-500"
+                  ></div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between gap-7">
+                <span>Tailwind</span>
+                <div
+                  class="relative w-full h-1 overflow-hidden rounded-full md:w-4/5 bg-slate-300"
+                >
+                  <div
+                    class="absolute w-3/5 h-1 bg-gradient-to-r from-orange-500 to-purple-500"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- img aboutme section -->
+        <div
+          class="w-48 rounded-t-full lg:w-60 bg-gradient-to-b from-purple-400 to-purple-100 rounded-b-md"
+        >
+          <img
+            class="transform scale-x-[-1] -mt-6 w-full"
+            src="../img/hendrik.webp"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
