@@ -89,9 +89,9 @@
       <section
         class="h-[calc(100vh-60px)] lg:h-[calc(100vh-84px)] md:h-[calc(50vh-84px)] bg-gradient-to-t from-orange-300 to-purple-100"
       >
-        <div class="container relative h-full p-2">
+        <div class="container relative h-full p-2 mx-auto">
           <h1
-            class="absolute left-0 right-0 mx-auto mb-4 text-6xl font-extrabold text-center md:top-20 md:mx-0 md:right-auto md:text-6xl top-[5%] font-heading"
+            class="absolute left-0 right-0 mx-auto mb-4 text-6xl font-extrabold text-center md:top-[10%] md:mx-0 md:right-auto md:text-6xl top-[5%] font-heading"
           >
             Front End
             <span class="text-orange-500 md:block md:pl-32 md:mt-3"
@@ -100,7 +100,7 @@
           </h1>
 
           <div
-            class="z-10 hidden p-4 bg-white rounded-lg shadow-sm md:bottom-[10%] lg:right-[15%] right-1/4 w-96 md:block md:absolute"
+            class="z-10 hidden p-4 bg-white rounded-lg shadow-sm md:bottom-[10%] lg:right-[5%] right-1/4 w-96 md:block md:absolute"
           >
             <p>
               If you're looking for someone to bring your web projects to life,
@@ -112,7 +112,7 @@
           </div>
           <!-- hero img -->
           <img
-            class="absolute bottom-0 left-0 right-0 mx-auto w-80 md:mx-0 md:left-auto lg:left-0 lg:mx-auto"
+            class="absolute bottom-0 left-0 right-0 mx-auto w-80 lg:w-[30%] md:mx-0 md:left-auto lg:left-0 lg:mx-auto"
             src="../img/hendrik2.webp"
             alt=""
           />
@@ -366,5 +366,68 @@
         </div>
       </div>
     </section>
+    <!-- contact section -->
+    <section>
+      <div class="container flex flex-col gap-5 px-2 py-20 mx-auto md:gap-10">
+        <div class="flex flex-col items-center gap-2">
+          <h2 class="text-2xl font-semibold text-orange-500 md:text-4xl">
+            Let's Collaborate
+          </h2>
+          <p class="text-sm text-center md:w-4/5 md:text-xl">
+            Do you have a brilliant idea ready to be turned into a real project?
+            Don't hesitate to reach out, and let's bring that idea to life
+            together!
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 lg:gap-6 md:gap-5">
+          <input
+            class="w-full p-2 border-2 rounded-md md:w-11/12 lg:w-3/4 border-slate-500"
+            type="text"
+            placeholder="Full Name"
+          />
+          <input
+            class="w-full p-2 border-2 rounded-md md:w-11/12 lg:w-3/4 border-slate-500"
+            type="email"
+            placeholder="Drop your email here"
+          />
+          <textarea
+            class="w-full h-40 p-2 border-2 rounded-md md:h-52 md:w-11/12 lg:w-3/4 border-slate-500"
+            name=""
+            id=""
+            placeholder="Message..."
+          ></textarea>
+          <button
+            class="w-full py-2 text-white bg-purple-500 rounded-md md:w-11/12 lg:w-3/4"
+          >
+            Submit
+          </button>
+        </div>
+
+        <div class="w-full"></div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="shadow-sm bg-gradient-to-tr from-orange-300 to-purple-300">
+      <div
+        class="container flex items-center justify-between px-2 py-4 mx-auto"
+      >
+        <a class="text-lg font-bold md:text-2xl font-heading" href="#home"
+          >Hendrik</a
+        >
+        <p class="hidden text-sm text-center md:text-lg lg:text-sm md:block">
+          &copy;2024 Hendrik. Inspired by Lama Dev.
+        </p>
+        <div class="flex gap-4">
+          <a href=""><i class="fa-brands fa-instagram fa-lg md:fa-2xl"></i></a>
+          <a href=""><i class="fa-brands fa-github fa-lg md:fa-2xl"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/87ee3a16a9.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
