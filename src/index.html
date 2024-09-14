@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <title>Hendrik's Portfolio Website</title>
   </head>
   <body class="font-content text-slate-900">
@@ -91,13 +92,10 @@
       >
         <div class="container relative h-full p-2 mx-auto">
           <h1
+            id="typed"
             class="absolute left-0 right-0 mx-auto mb-4 text-6xl font-extrabold text-center md:top-[10%] md:mx-0 md:right-auto md:text-6xl top-[5%] font-heading"
-          >
-            Front End
-            <span class="text-orange-500 md:block md:pl-32 md:mt-3"
-              >Developer</span
-            >
-          </h1>
+          ></h1>
+          <p class="text-orange-500 md:block md:pl-32 md:mt-3">Developer</p>
 
           <div
             class="z-10 hidden p-4 bg-white rounded-lg shadow-sm md:bottom-[10%] lg:right-[5%] right-1/4 w-96 md:block md:absolute"
@@ -429,5 +427,15 @@
       src="https://kit.fontawesome.com/87ee3a16a9.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var typed = new Typed("#typed", {
+        strings: ["Front End", "Web"], // Kalimat yang ingin diketik
+        typeSpeed: 100, // Kecepatan mengetik (dalam milidetik)
+        backSpeed: 50, // Kecepatan menghapus teks
+        loop: true, // Menentukan apakah teks akan berulang
+        showCursor: true, // Menampilkan kursor berkedip
+        cursorChar: "|", // Karakter untuk kursor
+      });
+    </script>
   </body>
 </html>
