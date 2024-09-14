@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Hendrik's Portfolio Website</title>
   </head>
   <body class="font-content text-slate-900">
@@ -91,6 +92,7 @@
       >
         <div class="container relative h-full p-2 mx-auto">
           <h1
+            data-aos="fade-right"
             class="absolute left-0 right-0 mx-auto mb-4 text-6xl font-extrabold text-center md:top-[10%] md:mx-0 md:right-auto md:text-6xl top-[5%] font-heading"
           >
             Front End
@@ -100,6 +102,7 @@
           </h1>
 
           <div
+            data-aos="fade-left"
             class="z-10 hidden p-4 bg-white rounded-lg shadow-sm md:bottom-[10%] lg:right-[5%] right-1/4 w-96 md:block md:absolute"
           >
             <p>
@@ -112,6 +115,7 @@
           </div>
           <!-- hero img -->
           <img
+            data-aos="fade-up"
             class="absolute bottom-0 left-0 right-0 mx-auto w-80 lg:w-[30%] md:mx-0 md:left-auto lg:left-0 lg:mx-auto"
             src="../img/hendrik2.webp"
             alt=""
@@ -126,7 +130,7 @@
         class="container flex flex-col items-center px-2 py-20 mx-auto lg:py-32 lg:justify-evenly gap-7 lg:flex-row-reverse"
       >
         <!-- heading aboutme -->
-        <div class="flex flex-col gap-3 lg:w-3/5 lg:gap-7">
+        <div data-aos="fade-left" class="flex flex-col gap-3 lg:w-3/5 lg:gap-7">
           <!-- text -->
           <div class="flex flex-col items-center gap-2 lg:gap-5">
             <h1 class="text-2xl font-semibold text-orange-500 md:text-4xl">
@@ -186,6 +190,7 @@
         </div>
         <!-- img aboutme section -->
         <div
+          data-aos="fade-right"
           class="w-48 rounded-t-full lg:w-60 bg-gradient-to-b from-purple-400 to-purple-100 rounded-b-md"
         >
           <img
@@ -201,7 +206,7 @@
       <div
         class="container flex flex-col items-center gap-5 px-2 mx-auto md:gap-10"
       >
-        <div class="flex flex-col items-center gap-2">
+        <div data-aos="fade-up" class="flex flex-col items-center gap-2">
           <h2 class="text-2xl font-semibold text-orange-500 md:text-4xl">
             See My Latest Project
           </h2>
@@ -212,6 +217,7 @@
         </div>
 
         <div
+          data-aos="fade-up"
           class="grid w-full grid-cols-1 gap-3 mx-auto md:gap-5 lg:grid-cols-3 md:grid-cols-2 place-items-center"
         >
           <div
@@ -369,7 +375,7 @@
     <!-- contact section -->
     <section>
       <div class="container flex flex-col gap-5 px-2 py-20 mx-auto md:gap-10">
-        <div class="flex flex-col items-center gap-2">
+        <div data-aos="fade-up" class="flex flex-col items-center gap-2">
           <h2 class="text-2xl font-semibold text-orange-500 md:text-4xl">
             Let's Collaborate
           </h2>
@@ -380,7 +386,10 @@
           </p>
         </div>
 
-        <div class="flex flex-col items-center gap-3 lg:gap-6 md:gap-5">
+        <div
+          data-aos="fade-up"
+          class="flex flex-col items-center gap-3 lg:gap-6 md:gap-5"
+        >
           <input
             class="w-full p-2 border-2 rounded-md md:w-11/12 lg:w-3/4 border-slate-500"
             type="text"
@@ -429,5 +438,7 @@
       src="https://kit.fontawesome.com/87ee3a16a9.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
